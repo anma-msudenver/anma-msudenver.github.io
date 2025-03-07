@@ -70,20 +70,24 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script>
     $(document).ready(function(){
+      console.log("started JavaScript");
       // do this when click on the clicktoreveal1 button
       $("#clicktoreveal1").click(function() {
         // run this when I click on this button
+        console.log("clicked on the 1st button");
         $("#div_ctr1").html("Texas A&amp;M University");
       });
 
       // do this when click on the clicktoreveal2 button
       $("#clicktoreveal2").click(function() {
         // run this when I click on this button
+        console.log("clicked on the 2nd button");
         $("#div_ctr2").html("MSU Denver");
       });
 
       // toggle the photo on and off
       $("#togglephoto").click(function() {
+        console.log("clicked on the toggle photo button");
         $("#myphoto").fadeToggle(1000, "linear");
       });
     });
