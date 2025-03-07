@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> My lab5 web page.</title>
+  <style>
+    body {width: 100%;}
+    #container {
+      width: 70%;
+      text-align: left;
+      margin: 0px auto;
+    }
+    #photo {
+      background-color: #eefeee;
+      margin-left: auto;
+      margin-right: 0;
+      float: right;
+      width: 200px;
+    }
+    #myphoto {
+      height: auto;
+      width: 150px;
+      border: 1px solid #ddd;
+      border-radius: 50%;
+      padding: 5px;
+      display: block;
+      margin: auto;
+    }
+    .caption {
+      font-size: 10px;
+      font-family: times;
+      text-align: center;
+    }
+    p, td, li {
+      font-size: 10px;
+      font-family: times;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: times;
+      background-color: #fefeee;
+    }
+    a {text-decoration: none;}
+    a:link {background-color: #eeeefe;}
+    a:visited {background-color: #feeeee;}
+    a:hover {background-color: #fefeee;}
+    #thingsIlove {
+      background-color: #fefddd;
+    }
+    #classes {
+      background-color: #eeeefe;
+    }
+    #employment {
+      width: 100%;
+      font-family: Arial;
+      border-collapse: collapse;
+    }
+    #employment th, #employment td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    #employment th {
+      font: black bold times;
+      background-color: #04aa6d;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      color: white;
+    }
+  </style>
+  </head>
+  <body>
+    <div id = "container">
+    <h1> My lab5 web page! Howdy!</h1>
+    <p> This is the 5th lab for GIS 3410, Web Mapping, from MSU Denver.</p>
+    <h3> About me</h3>
+
+    <div id = "photo">
+      <img id = "myphoto" src = "myphoto.jpg" />
+      <p class = "caption"> Dr. Andong Ma </p>
+      <p class = "caption"> Photo by author </p>
+      I teach at <a href = "https://www.msudenver.edu"> MSU Denver</a>.
+    </div>
+
+    <div id = "thingsIlove">
+      <p> Here are the four things that I love the most: My Daughter, My Wife, My Cat, and Ski.</p>
+    
+      <ol>
+        <li>My Daughter</li>
+        <li>My Wife</li>
+        <li>My Cat</li>
+        <li>Ski</li>
+      </ol>
+    </div>
+
+    <div id = "classes">
+      <p>Some other things about me - I teach the following classes:</p>
+      <ul>
+        <li>GIS</li>
+        <li>Cartography</li>
+        <li>Web Mapping</li>
+        <li>GIS Applications</li>
+        <li>GIS Programming</li>
+        <li>Spatial Modeling in Raster</li>
+      </ul>
+    </div>
+    
+    <h3>The universities where I have worked include:</h3>
+    <table id = "employment">
+      <tr>
+        <th>Name</th>
+        <th>Start Year</th>
+        <th>End Year</th>
+        <th>Position</th>
+      </tr>
+      <tr>
+        <td>Texas A&amp;M University</td>
+        <td>2023</td>
+        <td>2024</td>
+        <td>Visiting Assistant Professor</td>
+      </tr>
+      <tr>
+        <td>MSU Denver</td>
+        <td>2024</td>
+        <td>present</td>
+        <td>Assistant Professor</td>
+      </tr>
+    </table>
+    </div>
+  </body>
+</html>
