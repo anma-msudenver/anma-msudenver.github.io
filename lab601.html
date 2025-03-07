@@ -81,6 +81,11 @@
         // run this when I click on this button
         $("#div_ctr2").html("MSU Denver");
       });
+
+      // toggle the photo on and off
+      $("#togglephoto").click(function() {
+        $("#myphoto").fadeToggle();
+      });
     });
   </script>
     
@@ -96,6 +101,7 @@
       <p class = "caption"> Dr. Andong Ma </p>
       <p class = "caption"> Photo by author </p>
       I teach at <a href = "https://www.msudenver.edu"> MSU Denver</a>.
+      <button id="togglephoto">Toggle the photo on/off.</button>
     </div>
 
     <div id = "thingsIlove">
