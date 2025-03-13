@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Hangman!</title>
+    <style>
+      #alphabet { margin: auto;
+                  padding: 20px; }
+      #word { margin: auto;
+              font: 400em serif bold;
+              padding: 20px;
+            }
+      #info { padding: 20px; 
+              font-color: red;
+              background-color: yellow; 
+            }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+         $(document).ready( function() {
+              // this is the secret word!
+              word =  "y o u r w o r d";
+              blank = "- - - - - - - -";
+              $("#word").text(blank);
+
+              // this is the list of letters that have been tried
+              triedLetters = "";
+
+              // this is the number of tries left
+              tries = 10;
+              $("#guesses").text("Guesses left: "+tries);
+
+              // boolean (true / false variable) to track if game has been won or lost
+              gameWon = false;
+              gameLost = false;
+                   
+              // when a user clicks on a letter... this is where everything happens!
+              $(".letter").click( function() {
+
+                  // check if the game has been won or lost
+                  if (gameWon != true && gameLost != true) {
+                    // erase the info box
+
+                
+                    // use text to get the letter that was clicked on
+
+
+                    // make a line through the letter
+
+                    // if the letter has already been clicked on, 
+                    // let the user know it's already been tried
+                    if (triedLetters.includes(letter)) {
+
+                    // if the letter isn't in the word, reduce
+                    // the number of tries and check if they lost
+                    } else if (! word.includes(letter)) {
+
+                      // reduce the number of remaining tries by 1
+
+
+                      // are they out of tries? then they lost!
+
+                    
+                    
+                    // otherwise, put a line through it and
+                    // add it to the found letters
+                    // and check if the player won or lost
+                    } else {
+
+                      // replace the blanks in the blanks variable 
+                      // with the letter that was clicked on
+                      // replace the blanks with letter in blank
+                      // and replace the letters with blanks in word
+
+                     
+                      // check if the player has won the game
+
+
+                    }
+
+                    // add the letter to letters already tried
+
+                  }
+              });
+
+             // 
+           
+         });
+      
+    </script>
+  </head>
+  <body>
+     <h1>Let's play Hangman!</h1>
+     <div id="guesses"></div>
+     <div id="info"></div>
+     <div id="word"></div>
+     <div id="alphabet"><p>Click to make a guess!</p>
+     <span class="letter" id="a">a</span>
+     <span class="letter" id="b">b</span>
+     <span class="letter" id="c">c</span>
+     <span class="letter" id="d">d</span>
+     <span class="letter" id="e">e</span>
+     <span class="letter" id="f">f</span>
+     <span class="letter" id="g">g</span>
+     <span class="letter" id="h">h</span>
+     <span class="letter" id="i">i</span>
+     <span class="letter" id="j">j</span>
+     <span class="letter" id="k">k</span>
+     <span class="letter" id="l">l</span>
+     <span class="letter" id="m">m</span>
+     <span class="letter" id="n">n</span>
+     <span class="letter" id="o">o</span>
+     <span class="letter" id="p">p</span>  
+     <span class="letter" id="q">q</span>
+     <span class="letter" id="r">r</span>
+     <span class="letter" id="s">s</span>
+     <span class="letter" id="t">t</span>
+     <span class="letter" id="u">u</span>
+     <span class="letter" id="v">v</span>
+     <span class="letter" id="w">w</span>  
+     <span class="letter" id="x">x</span>
+     <span class="letter" id="y">y</span>
+     <span class="letter" id="z">z</span>  
+     </div>
+  </body>
+</html>
