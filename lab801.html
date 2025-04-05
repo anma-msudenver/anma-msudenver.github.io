@@ -47,7 +47,7 @@
 	$(document).ready(function() {
 
 		// let's create our basemap! -- ##1 here
-
+		map = L.map('map').setView([0, 0], 10);
 		
 		// let's add three sets of background tiles - one from OSM,  one from HOT OSM, and one from openTopoMap
 		var OSMTiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -62,9 +62,12 @@
 			attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'});
 
 		// this is an object to keep track of our three basemaps -- ##2 here
-
+		var baseMaps = {"OpenStreetMap" : OSMTiles,
+			       "Humanitarian OSM" : HOTOSMTiles,
+			       "OpenTopoMap" : OpenTopoMap};
 
 		// the control let's the user turn on / off layers -- ##3 here
+		var layerControl = L.control.layers(baseMaps, null).addTo(map);
 
 		// let's add the Denver ACS data -- ##4 here
 
