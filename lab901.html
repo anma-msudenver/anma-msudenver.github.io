@@ -71,30 +71,33 @@
     // define a function to style my choropleth map
     function style1 (feature) {
       d = feature.properties.PCT_POVERTY;
-      answer = d > 30 ? '#800026':
-        d > 20 ? '#DB0026':
-        d > 15 ? '#E31A1C':
-        d > 10 ? '#FC4E2A':
-        d > 5 ? 'FD8D3C':
-        d > 3 ? 'FEB24C':
-        d > 1 ? 'FED976':
-        '#FFEDA0';
-      styleReturn = {
-        fillColor : answer,
-        weight : 1,
-        opacity : 1,
-        color : 'white',
-        dashArray : '3',
-        fillOpacity : 0.7
-      };
-      return styleReturn;
+	answer = d > 30 ? '#800026' : 
+		d > 20 ? '#DB0026' : 
+		d > 15 ? '#E31A1C' : 
+		d > 10 ? '#FC4E2A' : 
+		d > 5 ? '#FD8D3C' : 
+		d > 3 ? '#FEB24C' : 
+		d > 1 ? '#FED976' : 
+		'#FFEDA0';
+	styleReturn = {
+		fillColor : answer,
+		weight : 1,
+		opacity	: 1,
+		color : 'white',
+		dashArray : '3',
+		fillOpacity : 0.7
+	};
+	return styleReturn;
     }
     
 		// let's add the Denver ACS data -- ##4 here
 		$.getJSON('./acs_denver_2021.geojson', function(data) {
 			// covert the file into a layer
 			acsDenver2021Layer = L.geoJSON(data, 
-                                     {style:style1}).addTo(map);
+                                     {style:style1, 
+				     onEachFeature: function(feature, layer) {
+					     layer.bindPopup("Percet Poverty: " + feature.properties.PCT_POVERTY + "%");
+				     }}).addTo(map);
 
 			// move the map to the area of the data
 			map.panTo(acsDenver2021Layer.getBounds().getCenter());
