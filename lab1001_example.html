@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>Lab 8 - Denver Neighborhood Data</title>
+	<title>Lab 10 - Denver Neighborhood Data</title>
 	
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
@@ -139,7 +139,7 @@ legend.onAdd = function (map) {
                  '15 - 20%', '20 - 30%','30%+' ];
     // note that you'll want to change these values to match your classes
 
-    div.innerHTML = '<h3>% Poverty</h3><br>';
+    div.innerHTML = '<h3>% Poverty</h3>';
     // loop through our density intervals and generate a label with a colored square for each interval
     for (var i = 0; i < colors.length; i++) {
         div.innerHTML += '<i style="background:' + colors[i] + '"></i> ' + labels[i] + '<br>';
