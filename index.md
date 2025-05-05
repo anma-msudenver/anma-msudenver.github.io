@@ -1,19 +1,13 @@
----
-title: "ESIIL Project Portfolio"
----
 
-# ![Andong Ma Photo](img/IMG_01802_clip.jpg){ width=200px }  
+# ![Andong Ma Photo](img/IMG_01802_clip.jpg){ width=100px }  
 ## Andong Ma
 
-## ESIIL Project
-The **Environmental Spatial Information Integration & Learning (ESIIL)** project develops and applies AI-driven geospatial methods to real-world environmental challenges. Key components include data curation, deep-learning object detection, and interactive web-based visualization.
 
 ## Contact Information
-- ✉️ Email: [your.email@example.com](mailto:your.email@example.com)  
-- 💻 GitHub: [github.com/yourusername](https://github.com/yourusername)  
-- 🔗 LinkedIn: [linkedin.com/in/yourprofile](https://www.linkedin.com/in/yourprofile)  
-- 🐦 Twitter: [@yourhandle](https://twitter.com/yourhandle)  
-- 🌐 ORCID: [0000-0000-0000-0000](https://orcid.org/0000-0000-0000-0000)
+- ✉️ Email: [anma@msudenver.edu](mailto:anma@msudenver.edu)  
+- 💻 GitHub: [github.com/anma-msudenver](https://github.com/anma-msudenver)  
+- 🔗 LinkedIn: [linkedin.com/in/andongma](https://www.linkedin.com/in/andongma)  
+- 🌐 ORCID: [0000-0003-1520-7381](https://orcid.org/0000-0003-1520-7381)
 
 ## Education
 - **Ph.D. in Geography**, _University Name_, Year  
