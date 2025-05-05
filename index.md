@@ -2,7 +2,7 @@
 title: "ESIIL Project Portfolio"
 ---
 
-# ![Andong Ma Photo](path/to/your-photo.jpg){ width=200px }  
+# ![Andong Ma Photo](img/IMG_01802_clip.jpg){ width=200px }  
 ## Andong Ma
 
 ## ESIIL Project
