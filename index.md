@@ -1,7 +1,9 @@
 
-# ![Andong Ma Photo](img/IMG_01802_clip.jpg){ width=100px }  
-## Andong Ma
 
+## Andong Ma
+<p align="center">
+  <img src="img/IMG_01802_clip.jpg" alt="Andong Ma Photo" width="100" />
+</p>
 
 ## Contact Information
 - ✉️ Email: [anma@msudenver.edu](mailto:anma@msudenver.edu)  
