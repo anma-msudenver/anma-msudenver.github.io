@@ -23,4 +23,4 @@ I am Dr. Andong Ma, an Assistant Professor in the Department of Earth & Atmosphe
 
 
 ## Unit 1: First Map in Python
-<embed type="text/html" src="msu_denver.html" width="600" height="600">
+<embed type="text/html" src="html/msu_denver.html" width="600" height="600">
