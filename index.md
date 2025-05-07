@@ -20,3 +20,7 @@
 
 ## Biography
 I am Dr. Andong Ma, an Assistant Professor in the Department of Earth & Atmospheric Sciences at Metropolitan State University of Denver. My research focuses on remote sensing, geospatial data science, machine learning, and geospatial artificial intelligence. Domain applications concentrate on land-cover/land-use change, natural hazard mapping, vegetation property extraction, and urban remote sensing.
+
+
+## Unit 1: First Map in Python
+<embed type="text/html" src="msu_denver.html" width="600" height="600">
